@@ -1,0 +1,80 @@
+/* Set the font for all form elements */
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600; 700;800;900& display=swap");
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+input,
+select,
+label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the form container */
+.form {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  box-shadow: 0px 0px 10px rgba(231, 13, 13, 0.1);
+
+  background: url("https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhaW58ZW58MHx8MHx8fDA=");
+}
+/* Style the h1 */
+h1 {
+  font-size: 100px; /* Adjust the font size as needed */
+  text-align: center; /* Center align the h1 */
+  margin-bottom: 10px;
+  background: url("https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhaW58ZW58MHx8MHx8fDA=");
+  /* Add some space below the h1 */
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+label[for="from"],
+label[for="to"],
+label[for="date"],
+label[for="time"],
+label[for="class"] {
+  color: rgb(108, 235, 91);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #09f8e4;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}

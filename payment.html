@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Mode</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <h1>Payment Mode</h1>
+    <form id="booking-form">
+      <div class="field">
+        <label for="payment">Payment Mode:</label>
+        <input
+          type="radio"
+          id="credit"
+          name="payment"
+          value="credit"
+          required
+        />
+        <label for="credit">Credit Card</label>
+        <input type="radio" id="debit" name="payment" value="debit" />
+        <label for="debit">Debit Card</label>
+        <input type="radio" id="UPI" name="payment" value="UPI" />
+        <label for="UPI">UPI</label>
+      </div>
+      <div class="amt">
+        <label for="amount">Amount:</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          placeholder="Enter amount"
+          required
+        />
+      </div>
+      <div class="captcha">
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      </div>
+      <button type="submit"><a href="confirm.html">Book Ticket</a></button>
+    </form>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="payment.js"></script>
+  </body>
+</html>
